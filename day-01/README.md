@@ -76,7 +76,7 @@ Result for my input data is: `270144`
 
 
 ## Part 2
-https://adventofcode.com/2010/day/10#part2
+https://adventofcode.com/2020/day/1#part2
 
 ### Description
 The Elves in accounting are thankful for your help; one of them even offers you a starfish coin they had left over from a past vacation. They offer you a second one if you can find **three** numbers in your expense report that meet the same criteria.
