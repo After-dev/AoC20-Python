@@ -49,6 +49,3 @@ print(get_fast_seat_ID_1(["BBFFBBFRLL"]))
 file = open('./input.data', 'r')
 boarding_passes = [line[:-1] for line in file.readlines()]
 print(get_fast_seat_ID_1(boarding_passes))
-
-lista = [1, 2, 3]
-lista.map(p => print(p))
