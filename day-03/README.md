@@ -63,7 +63,7 @@ In this example, traversing the map using this slope would cause you to encounte
 Starting at the top-left corner of your map and following a slope of right 3 and down 1, **how many trees would you encounter?**
 
 ### Solution
-To solve this problem, we must have in mind following idea:
+To solve this problem, we must keep in mind following idea:
 * Our data is a part of the forest. For example:
 ```
 ..##.......
