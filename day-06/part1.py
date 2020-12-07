@@ -41,6 +41,7 @@ groups = answers.replace("\n\n", "\r").replace("\n", "").split("\r")
 print(distinct_answers(groups))
 
 # My data
+print("Result for my puzzle:")
 file = open('./input.data', 'r')
 answers = file.read()
 groups = answers.replace("\n\n", "\r").replace("\n", "").split("\r")

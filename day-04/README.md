@@ -51,15 +51,6 @@ According to the above rules, your improved system would report **`2`** valid pa
 
 Count the number of **valid** passports - those that have all required fields. Treat `cid` as optional. **In your batch file, how many passports are valid?**
 
-### Solution
-To solve this problem, we are going to count completed fields from each passport:
-
-* If there are `8` completed fields, passport is **valid**.
-* If there are `7` completed fields and `cid` is not in it, passport is **valid**.
-* Other case, passport is **invalid**.
-
-At the end, the number of valid passports is returned.
-
 Result for my input data is: `228`
 
 
@@ -137,8 +128,5 @@ iyr:2010 hgt:158cm hcl:#b6652a ecl:blu byr:1944 eyr:2021 pid:093154719
 ```
 
 Count the number of **valid** passports - those that have all required fields **and valid values**. Continue to treat `cid` as optional. **In your batch file, how many passports are valid?**
-
-### Solution
-To solve this part, we use the previous code, but checking the value of each field. The field only is added to `completed_fields` if value satisfies the conditions of rules.
 
 Result for my input data is: `175`

@@ -26,21 +26,6 @@ In the above example, `2` passwords are valid. The middle password, `cdefg`, is 
 
 **How many passwords are valid** according to their policies?
 
-### Solution
-To solve this problem, we are going to **split each line** to obtain the **necessary information**. For example:
-* We have the following password entry: `1-3 a: abcde`
-* Firstly, we **split that entry** by `:` and we obtain two strings:
-	* Policy: `1-3 a`
-	* Password: ` abcde` (with a space at first char)
-* Secondly, we **split policy** by a space (` `) and we obtain the range and letter of policy:
-	* Range: `1-3`
-	* Letter: `a`
-* Finally, we **split the range** by `-` and we obtain limits of appearence:
-	* Min: `1`
-	* Max: `3`
-
-For each password, we split it and count the number of appearences of the policy letter (note that first space of password is still in it because char 1 is char 0 in programming. From this form we don't have to do nothing special to check it). Finally, we check if this value is between min and max and add `1` to the solution.
-
 Result for my input data is: `640`
 
 ## Part 2
@@ -59,13 +44,5 @@ Given the same example list from above:
 * `2-9 c: ccccccccc` is **invalid**: both position `2` and position `9` contain `c`.
 
 **How many passwords are valid** according to the new interpretation of the policies?
-
-### Solution
-To solve this part, we are going to solve this part like park 1, but changing validate condition:
-* If letter is at one of those positions, password is **valid**.
-* If letter is at both positions, password is **invalid**.
-* If letter is not at any of those positions, password is **invalid**.
-
-To implement this condition, we can check both positions and implement a `XOR`.
 
 Result for my input data is: `472`

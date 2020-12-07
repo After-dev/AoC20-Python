@@ -18,6 +18,7 @@ expense_report = [
 print(find_entries(expense_report))
 
 # My data
+print("Result for my puzzle:")
 file = open('./input.data', 'r')
 expense_report = [int(line[:-1]) for line in file.readlines()]
 print(find_entries(expense_report))

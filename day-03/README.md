@@ -62,42 +62,6 @@ In this example, traversing the map using this slope would cause you to encounte
 
 Starting at the top-left corner of your map and following a slope of right 3 and down 1, **how many trees would you encounter?**
 
-### Solution
-To solve this problem, we must keep in mind following idea:
-* Our data is a part of the forest. For example:
-```
-..##.......
-#...#...#..
-.#....#..#.
-..#.#...#.#
-.#...##..#.
-..#.##.....
-.#.#.#....#
-.#........#
-#.##...#...
-#...##....#
-.#..#...#.#
-```
-
-* This part is repeated indefinitely (blank column is to see it easier, not consider when you are solving the problem):
-```
-..##....... ..##....... ..##....... ..##.......   --->
-#...#...#.. #...#...#.. #...#...#.. #...#...#..
-.#....#..#. .#....#..#. .#....#..#. .#....#..#.
-..#.#...#.# ..#.#...#.# ..#.#...#.# ..#.#...#.#
-.#...##..#. .#...##..#. .#...##..#. .#...##..#.
-..#.##..... ..#.##..... ..#.##..... ..#.##.....   --->
-.#.#.#....# .#.#.#....# .#.#.#....# .#.#.#....#
-.#........# .#........# .#........# .#........#
-#.##...#... #.##...#... #.##...#... #.##...#...
-#...##....# #...##....# #...##....# #...##....#
-.#..#...#.# .#..#...#.# .#..#...#.# .#..#...#.#   --->
-```
-
-* You always start at top-left corner (`.`).
-
-* You have to move following a specific slope until the last bottom line. After each movement, you have to check if current position is a tree (`#`). If it is a tree, add `1` to solution. When last row is reached, return the final count value.
-
 Result for my input data is: `169`
 
 
@@ -119,8 +83,5 @@ Determine the number of trees you would encounter if, for each of the following 
 In the above example, these slopes would find `2`, `7`, `3`, `4`, and `2` tree(s) respectively; multiplied together, these produce the answer **`336`**.
 
 **What do you get if you multiply together the number of trees encountered on each of the listed slopes?**
-
-### Solution
-To solve this part, we only have to modify previous code to **recieve an array of slopes**, **calculate number of trees** for each slope and **multiply them** to return finally solution.
 
 Result for my input data is: `7560370818`

@@ -39,6 +39,7 @@ base_map = [
 print(count_trees(base_map, slope))
 
 # My data
+print("Result for my puzzle:")
 file = open('./input.data', 'r')
 base_map = [line[:-1] for line in file.readlines()]
 print(count_trees(base_map, slope))

@@ -24,6 +24,7 @@ passwords = [
 print(validate_passwords(passwords))
 
 # My data
+print("Result for my puzzle:")
 file = open('./input.data', 'r')
 passwords = [line[:-1] for line in file.readlines()]
 print(validate_passwords(passwords))

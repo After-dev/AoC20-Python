@@ -49,9 +49,6 @@ In this example, the sum of these counts is `3 + 3 + 3 + 1 + 1` = **`11`**.
 
 For each group, count the number of questions to which anyone answered "yes". **What is the sum of those counts?**
 
-### Solution
-To solve this problem, we count distinct answered questions for each group and sum them.
-
 Result for my input data is: `6903`
 
 
@@ -93,10 +90,5 @@ This list represents answers from five groups:
 In this example, the sum of these counts is `3 + 0 + 1 + 1 + 1` = **`6`**.
 
 For each group, count the number of questions to which **everyone** answered "yes". **What is the sum of those counts?**
-
-### Solution
-To solve this part, we split each group and compare questions from passenger 1 (only this person of each group because we are searching common answers to all passengers of the group. If some question is not in passenger 1, is not common to all passengers of the group):
-* Count number of occurrences of each questions in the group. If a question has a number of occurrences equal to number of passengers of the group, that question is common.
-* Other case, is not a common question.
 
 Result for my input data is: `3493`

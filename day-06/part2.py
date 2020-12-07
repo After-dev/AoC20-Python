@@ -43,6 +43,7 @@ groups = answers.split("\n\n")
 print(common_answers(groups))
 
 # My data
+print("Result for my puzzle:")
 file = open('./input.data', 'r')
 answers = file.read()[:-1]
 groups = answers.split("\n\n")

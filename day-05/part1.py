@@ -46,6 +46,7 @@ print(get_fast_seat_ID_1(["FFFBBBFRRR"]))
 print(get_fast_seat_ID_1(["BBFFBBFRLL"]))
 
 # My data
+print("Result for my puzzle:")
 file = open('./input.data', 'r')
 boarding_passes = [line[:-1] for line in file.readlines()]
 print(get_fast_seat_ID_1(boarding_passes))
